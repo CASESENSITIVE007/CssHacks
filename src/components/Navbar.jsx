@@ -1,11 +1,11 @@
 import logo from "./images/a.png";
 function Navbar() {
   return (
-    <div className="bg-gray-800 p-4">
+    <div className="bg-gray-800 p-4  ">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold flex items-center">
           <img src={logo} alt="Logo" className="h-20 mr-2" />
-          <p className="mb-4" >Amu Hacks</p>
+          <p className="mb-4" >Amu Hacks 4.0</p>
         </div>
         <nav>
           <ul className="flex space-x-4">
