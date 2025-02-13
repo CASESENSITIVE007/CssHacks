@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { Button } from "./ui/button";
 function Hero() {
   const targetDate = new Date();
   targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
@@ -43,11 +43,26 @@ function Hero() {
       </video>
 
       {/* Countdown Display */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 text-white">
-        <h1 className="text-4xl font-bold mb-4">Countdown Timer</h1>
-        <div className="text-2xl bg-gray-900 p-4 rounded-lg shadow-lg">
-          {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 text-white transition delay-200 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+        <h1 className="text-6xl font-[cursive] mb-2 ">AMUHACKS 4.O</h1>
+        <h1 className="text-4xl mb-2 ">(Date)</h1>
+        <Button className="hover:bg-amber-500 m-4 text-xl animate-bounce   ">Apply Here</Button>
+        <div className="text-2xl p-4 rounded-lg shadow-lg flex  ">
+          {/* {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}
+          {timeLeft.seconds}s */}
+
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-indigo-700  flex items-center justify-center h-20 w-20 ">
+          {timeLeft.days}d
+          </span>
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700   flex items-center justify-center h-20 w-20  text-fuchsia-600 ">
+          {timeLeft.hours}h
+          </span>
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-amber-600   flex items-center justify-center h-20 w-20    ">
+          {timeLeft.minutes}m
+          </span>
+          <span className="rounded-lg shadow-lg bg-gray-700 text-emerald-500   flex items-center justify-center h-20 w-20 ">
           {timeLeft.seconds}s
+          </span>
         </div>
       </div>
     </div>
