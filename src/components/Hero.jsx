@@ -1,24 +1,23 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 function Hero() {
-  const targetDate = new Date();
+  const targetDate = new Date(2025,1,25,0,0,0);
   targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
 
   const calculateTimeLeft = () => {
     const now = new Date();
     const difference = targetDate - now;
-
-    if (difference > 0) {
-      return {
+  
+    return difference > 0 
+      ?{
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / (1000 * 60)) % 60),
         seconds: Math.floor((difference / 1000) % 60),
-      };
-    } else {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+      }
+    :  {  days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
-  };
+  
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
