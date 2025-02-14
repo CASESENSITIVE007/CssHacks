@@ -3,7 +3,7 @@ import { HeartPulse } from "lucide-react";
 import { CircleDollarSign } from "lucide-react";
 function Themes() {
   return (
-    <div className="grid col-end-3 row-end-2 bg-black text-white ">
+    <div className="grid col-end-3 row-end-2 bg-black text-white md:w-1/2 mx-auto ">
       <h1 className="flex text-center justify-center text-2xl font-[cursive] m-5 ">
         THEMES
       </h1>
