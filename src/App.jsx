@@ -7,21 +7,21 @@ function App() {
   return (
     <div className="bg-black">
       <div>
-          <video
-                className="absolute inset-0 w-full h-full object-cover opacity-100"
-                autoPlay
-                loop
-                muted
-              >
-                <source src="src/components/images/bg2.mp4" type="video/mp4" />
-              </video>
-             
+        <video
+          className="absolute inset-0 w-full h-full object-cover opacity-100"
+          autoPlay
+          loop
+          muted
+        >
+          <source src="/bg2.mp4" type="video/mp4" />
+        </video>
+
         <Navbar />
         <Hero />
       </div>
 
       <Themes />
-      <Team/>
+      <Team />
     </div>
   );
 }

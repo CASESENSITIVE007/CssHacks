@@ -39,7 +39,7 @@ function Hero() {
                 loop
                 muted
               >
-                <source src="src/components/images/bg2.mp4" type="video/mp4" />
+                <source src="/bg2.mp4" type="video/mp4" />
               </video>
 
       {/* Countdown Display */}
