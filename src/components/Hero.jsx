@@ -52,16 +52,16 @@ function Hero() {
           {/* {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}
           {timeLeft.seconds}s */}
 
-          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-indigo-700  flex items-center justify-center opacity-70  h-20 w-20 ">
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-indigo-500 text-4xl font-bold  flex font-[cursive] items-center justify-center opacity-70  h-20 w-20 ">
             {timeLeft.days}d
           </span>
-          <span className="mr-3 rounded-lg shadow-lg bg-gray-700   flex items-center justify-center h-20 w-20 opacity-70 text-fuchsia-600 ">
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700   flex items-center text-3xl font-bold font-[cursive] justify-center h-20 w-20 opacity-70 text-fuchsia-600 ">
             {timeLeft.hours}h
           </span>
-          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-amber-600   flex items-center opacity-70 justify-center h-20 w-20    ">
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-amber-600 text-2xl font-bold font-[cursive]  flex items-center opacity-70 justify-center h-20 w-20    ">
             {timeLeft.minutes}m
           </span>
-          <span className="rounded-lg shadow-lg bg-gray-700 text-emerald-500   flex items-center opacity-70 justify-center h-20 w-20 ">
+          <span className="rounded-lg shadow-lg bg-gray-700 text-emerald-500 text-xl font-bold font-[cursive] flex items-center opacity-70 justify-center h-20 w-20 ">
             {timeLeft.seconds}s
           </span>
         </div>
