@@ -12,7 +12,7 @@ function Team() {
   //tech, sponcer ,management , pr, organiser
   const teamsNames = ["Tech", "Sponcer", "Management", "Pr", "Organiser"];
   return (
-    <div className="bg-black text-white  py-10">
+    <div id="team" className="bg-black text-white  py-10">
       <div className="flex flex-col items-center mt-10">
         <h1 className="text-4xl font-bold mb-6  font-[cursive]">
           Meet Our Team

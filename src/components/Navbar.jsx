@@ -1,3 +1,4 @@
+import {Link as  ScrollLink } from "react-scroll";
 import logo from "./images/a.png";
 import amulogo from "./images/Amu-logo.png";
 
@@ -11,24 +12,24 @@ function Navbar() {
         <nav className=" ml-16" >
           <ul className="flex space-x-4">
             <li>
-              <a href="#about" className="text-white text-2xl font-serif  hover:underline  ">
+              <ScrollLink to="/" smooth={true} duration={500} className="text-white text-2xl font-serif  hover:underline  ">
                 ABOUT
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#themes" className="text-white text-2xl font-serif hover:underline   ">
+              <ScrollLink to="themes" smooth={true} duration={500}  className="text-white text-2xl font-serif hover:underline   ">
                 THEMES
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#prizes" className="text-white text-2xl font-serif hover:underline  ">
+              <ScrollLink to="prizes" smooth={true} duration={500} className="text-white text-2xl font-serif hover:underline  ">
               PRIZES
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#team" className="text-white text-2xl font-serif hover:underline  ">
+              <ScrollLink to="team" smooth={true} duration={500} className="text-white text-2xl font-serif hover:underline  ">
                 TEAM
-              </a>
+              </ScrollLink>
             </li>
           </ul>
         </nav>
