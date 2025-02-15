@@ -37,6 +37,7 @@ function Hero() {
                 autoPlay
                 loop
                 muted
+                playsinline
               >
                 <source src="/bg2.mp4" type="video/mp4" />
               </video>
