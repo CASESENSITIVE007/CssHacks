@@ -1,23 +1,22 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 function Hero() {
-  const targetDate = new Date(2025,1,25,0,0,0);
+  const targetDate = new Date(2025, 1, 25, 0, 0, 0);
   targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
 
   const calculateTimeLeft = () => {
     const now = new Date();
     const difference = targetDate - now;
-  
-    return difference > 0 
-      ?{
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / (1000 * 60)) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      }
-    :  {  days: 0, hours: 0, minutes: 0, seconds: 0 };
-    }
-  
+
+    return difference > 0
+      ? {
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / (1000 * 60)) % 60),
+          seconds: Math.floor((difference / 1000) % 60),
+        }
+      : { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -32,15 +31,16 @@ function Hero() {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black">
       {/* Video Background */}
-     <video
-                className="absolute inset-0 w-full h-full object-cover opacity-100"
-                autoPlay
-                loop
-                muted
-                playsinline
-              >
-                <source src="/bg2.mp4" type="video/mp4" />
-              </video>
+      <video
+        className="absolute inset-0 w-full h-full object-cover opacity-100"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+      >
+        <source src="/bg2.mp4" type="video/mp4" />
+      </video>
 
       {/* Countdown Display */}
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white transition delay-200 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">

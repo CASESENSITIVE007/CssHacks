@@ -12,7 +12,8 @@ function App() {
           autoPlay
           loop
           muted
-          playsinline
+          playsInline
+          preload="auto"
         >
           <source src="/bg2.mp4" type="video/mp4" />
         </video>
