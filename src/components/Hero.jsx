@@ -43,26 +43,26 @@ function Hero() {
       </video>
 
       {/* Countdown Display */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white transition delay-200 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-        <h1 className="text-6xl font-[cursive] mb-2 ">AMUHACKS 4.O</h1>
-        <h1 className="text-4xl mb-2 ">(Date)</h1>
-        <Button className="hover:bg-amber-500 m-4 text-xl animate-bounce   ">
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white transition delay-200 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 size-  ">
+        <h1 className="text-7xl font-serif mb-2 ">AMUHACKS 4.O</h1>
+        <h1 className="text-6xl mb-2 ">(Date)</h1>
+        <Button className="hover:bg-amber-500 m-4 text-2xl animate-bounce   ">
           Apply Here
         </Button>
-        <div className="text-2xl p-4 rounded-lg shadow-lg flex  ">
+        <div className="text-4xl p-4 rounded-lg shadow-lg flex  ">
           {/* {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}
           {timeLeft.seconds}s */}
 
-          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-indigo-500 text-4xl font-bold  flex font-[cursive] items-center justify-center opacity-70  h-20 w-20 ">
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-indigo-500 text-5xl font-bold  flex font-serif items-center justify-center opacity-70  h-20 w-20 ">
             {timeLeft.days}d
           </span>
-          <span className="mr-3 rounded-lg shadow-lg bg-gray-700   flex items-center text-3xl font-bold font-[cursive] justify-center h-20 w-20 opacity-70 text-fuchsia-600 ">
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700   flex items-center text-4xl font-bold font-serif justify-center h-20 w-20 opacity-70 text-fuchsia-600 ">
             {timeLeft.hours}h
           </span>
-          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-amber-600 text-2xl font-bold font-[cursive]  flex items-center opacity-70 justify-center h-20 w-20    ">
+          <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-amber-600 text-3xl font-bold font-serif  flex items-center opacity-70 justify-center h-20 w-20    ">
             {timeLeft.minutes}m
           </span>
-          <span className="rounded-lg shadow-lg bg-gray-700 text-emerald-500 text-xl font-bold font-[cursive] flex items-center opacity-70 justify-center h-20 w-20 ">
+          <span className="rounded-lg shadow-lg bg-gray-700 text-emerald-500 text-2xl font-bold font-serif flex items-center opacity-70 justify-center h-20 w-20 ">
             {timeLeft.seconds}s
           </span>
         </div>

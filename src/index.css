@@ -4,7 +4,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
+body{
+  background-color: black;
+}
 
 :root {
   --background: hsl(0 0% 100%);

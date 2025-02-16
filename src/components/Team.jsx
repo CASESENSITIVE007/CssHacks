@@ -12,16 +12,16 @@ function Team() {
   //tech, sponcer ,management , pr, organiser
   const teamsNames = ["Tech", "Sponcer", "Management", "Pr", "Organiser"];
   return (
-    <div id="team" className="bg-black text-white  py-10">
-      <div className="flex flex-col items-center mt-10">
-        <h1 className="text-4xl font-bold mb-6  font-[cursive]">
+    <div id="team" className="bg-black text-white m-10 py-10">
+      <div className="flex flex-col items-center  mt-10">
+        <h1 className="text-5xl font-bold mb-6  font-serif">
           Meet Our Team
         </h1>
 
         <ul className="flex space-x-4 mb-6">
           {teamsNames.map((name) => (
             <li
-              className={`mt-5 text-xl cursor-pointer font-serif p-2  ${
+              className={`  mt-10 mb-10 text-3xl cursor-pointer font-serif p-2  ${
                 user === name
                   ? "bg-slate-500 rounded-lg"
                   : "hover:rounded-lg  hover:bg-slate-300"
@@ -34,11 +34,11 @@ function Team() {
           ))}
         </ul>
       </div>
-      <div className="w-1/2 mx-auto flex flex-wrap justify-center gap-10">
+      <div className="w-3/4 mx-auto flex flex-wrap justify-center gap-10">
         {teams.map((teamMember) => {
           if (teamMember.role === user) {
             return (
-              <div className="m-4  " key={teamMember.id}>
+              <div className="m-4 " key={teamMember.id}>
                 <TeamCard
                   image={saadphoto}
                   name={teamMember.name}
