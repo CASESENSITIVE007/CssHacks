@@ -8,7 +8,7 @@ import {
 function Faq() {
   return (
     <div className="text-white w-1/2 mx-auto ">
-        <h1 className="text-3xl text-center m-10">FAQ's</h1>
+        <h1 className="text-5xl font-serif text-center  m-10">FAQ's</h1>
          <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
