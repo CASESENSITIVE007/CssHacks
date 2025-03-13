@@ -1,9 +1,13 @@
 import { University } from "lucide-react";
 import { HeartPulse } from "lucide-react";
 import { CircleDollarSign } from "lucide-react";
+
 function Themes() {
   return (
-    <div id="themes"  className="  grid col-end-3 row-end-2 bg-black text-white md:w-3/4 mx-auto m-20 ">
+
+    <div id="themes"  className="  grid col-end-3 row-end-2 text-white md:w-3/4 mx-auto m-20 ">
+    
+
       <h1 className="flex text-center justify-center text-5xl font-serif m-5 ">
         THEMES
       </h1>
@@ -37,6 +41,7 @@ function Themes() {
           <h1>Finance</h1>
         </span>
       </div>
+   
     </div>
   );
 }

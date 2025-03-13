@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+
 import { Button } from "./ui/button";
 function Hero() {
-  const targetDate = new Date(2025, 1, 25, 0, 0, 0);
+  const targetDate = new Date(2025, 4, 1, 0, 0, 0);
   targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
 
   const calculateTimeLeft = () => {
@@ -29,21 +30,8 @@ function Hero() {
   }, []); // Re-run when timeLeft changes
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
-      {/* Video Background */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover opacity-100"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-      >
-        <source src="/bg2.mp4" type="video/mp4" />
-      </video>
-
-      {/* Countdown Display */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white transition delay-200 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 size-  ">
+    <div className="relative w-full h-screen overflow-hidden ">
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white transition delay-200 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
         <h1 className="text-7xl font-serif mb-2 ">AMUHACKS 4.O</h1>
         <h1 className="text-6xl mb-2 ">(Date)</h1>
         <Button className="hover:bg-amber-500 m-4 text-2xl animate-bounce   ">
