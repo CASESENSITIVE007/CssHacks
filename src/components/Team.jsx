@@ -10,7 +10,7 @@ function Team() {
     console.log(name);
   }
   //tech, sponcer ,management , pr, organiser
-  const teamsNames = ["Tech", "Sponcer", "Management", "Pr", "Organiser"];
+  const teamsNames = ["Tech", "Sponsor", "Management", "Pr", "Organiser"];
   return (
     <div id="team" className="bg-black text-white m-10 py-10">
       <div className="flex flex-col items-center  mt-10">

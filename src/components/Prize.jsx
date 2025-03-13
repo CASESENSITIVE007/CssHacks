@@ -1,20 +1,12 @@
-import { Button } from "@/components/ui/button"
+
 import {
   Card,
-  CardContent,
+  
   CardDescription,
-  CardFooter,
+ 
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 
 export default function prize()
 {
@@ -33,7 +25,7 @@ export default function prize()
   </Card>
     <Card className="w-[350px] dark ">
     <CardHeader>
-      <CardTitle>2nt Prize</CardTitle>
+      <CardTitle>2nd Prize</CardTitle>
       <CardDescription>Deploy your new project in one-click.</CardDescription>
     </CardHeader>
   </Card>
