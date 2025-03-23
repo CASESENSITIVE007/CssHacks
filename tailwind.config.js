@@ -1,29 +1,21 @@
-/** @type {import('tailwindcss').Config} */
-const { flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+import { flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+import animate from "tailwindcss-animate";
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default  {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",  // Include both js and ts files
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",  // Add this if you have components in app directory
   ],
   darkMode: "class",
   theme: {
     extend: {
       animation: {
-        spotlight: "spotlight 2s ease .75s 1 forwards",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       keyframes: {
-        spotlight: {
-          "0%": {
-            opacity: 0,
-            transform: "translate(-72%, -62%) scale(0.5)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate(-50%,-40%) scale(1)",
-          },
-        },
+      
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -33,9 +25,16 @@ module.exports = {
           to: { height: 0 },
         },
       },
+      fontFamily:{
+        lucky:['"Luckiest Guy"', 'cursive'],
+        fredoka: ["Fredoka", "sans-serif"],
+      }
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [
+    animate,
+    addVariablesForColors,
+  ],
 }
 
 function addVariablesForColors({ addBase, theme }) {
