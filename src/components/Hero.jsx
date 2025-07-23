@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { Button } from "./ui/button";
 function Hero() {
-  const targetDate = new Date(2025, 4, 1, 0, 0, 0);
+  const targetDate = new Date(2025, 3, 2, 0, 0, 0);
   targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
 
   const calculateTimeLeft = () => {
@@ -33,14 +33,11 @@ function Hero() {
     <div className="relative w-full h-screen overflow-hidden ">
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white transition delay-200 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
         <h1 className="text-7xl font-serif mb-2 ">AMUHACKS 4.O</h1>
-        <h1 className="text-6xl mb-2 ">(Date)</h1>
+        <h1 className="text-5xl mb-2  ">11/April/25</h1>
         <Button className="hover:bg-amber-500 m-4 text-2xl animate-bounce   ">
           Apply Here
         </Button>
         <div className="text-4xl p-4 rounded-lg shadow-lg flex  ">
-          {/* {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}
-          {timeLeft.seconds}s */}
-
           <span className="mr-3 rounded-lg shadow-lg bg-gray-700 text-indigo-500 text-5xl font-bold  flex font-serif items-center justify-center opacity-70  h-20 w-20 ">
             {timeLeft.days}d
           </span>

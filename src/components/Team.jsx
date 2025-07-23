@@ -7,10 +7,10 @@ function Team() {
   const [user, setUser] = useState("Tech");
   function handleClick(name) {
     setUser(name);
-    console.log(name);
+    
   }
   //tech, sponcer ,management , pr, organiser
-  const teamsNames = ["Tech", "Sponsor", "Management", "Pr", "Organiser"];
+  const teamsNames = ["Organiser", "PR & Social Media", "Tech"];
   return (
     <div id="team" className="bg-black text-white m-10 py-10">
       <div className="flex flex-col items-center  mt-10">

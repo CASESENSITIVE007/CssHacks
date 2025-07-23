@@ -20,19 +20,19 @@ export default function prize()
     <Card className="w-[350px] dark ">
     <CardHeader>
       <CardTitle>1st Prize</CardTitle>
-      <CardDescription>Deploy your new project in one-click.</CardDescription>
+      <CardDescription>7000</CardDescription>
     </CardHeader>
   </Card>
     <Card className="w-[350px] dark ">
     <CardHeader>
       <CardTitle>2nd Prize</CardTitle>
-      <CardDescription>Deploy your new project in one-click.</CardDescription>
+      <CardDescription>5000</CardDescription>
     </CardHeader>
   </Card>
     <Card className="w-[350px] dark ">
     <CardHeader>
       <CardTitle>3rd Prize</CardTitle>
-      <CardDescription>Deploy your new project in one-click.</CardDescription>
+      <CardDescription>3000</CardDescription>
     </CardHeader>
   </Card>
   </div>

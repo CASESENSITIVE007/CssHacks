@@ -1,4 +1,3 @@
-
 import csslogo from "../components/images/a.png";
 import { Instagram, Linkedin } from "lucide-react";
 
@@ -10,15 +9,17 @@ function Footer() {
         <p>Computer Science Society</p>
       </div>
       <div>
-        <p>Copyright © 2025 - All rights reserved</p>
+        <p>Department Of Computer Science</p>
+      </div>
+      <div>
+        <p>Aligarh Muslim University</p>
       </div>
       <div className="flex gap-5 p-2">
         <a
           href="https://www.instagram.com/css.amu/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-gray-400 transition-colors duration-200"
-        >
+          className="hover:text-gray-400 transition-colors duration-200">
           <Instagram size={24} />
         </a>
         <a
